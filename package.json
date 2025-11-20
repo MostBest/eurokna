@@ -16,5 +16,12 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gulp": "^5.0.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.94.2"
   }
 }
