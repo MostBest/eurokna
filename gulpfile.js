@@ -21,6 +21,7 @@ function css() {
 }
 
 exports.css = css;
+
 exports.watch = function () {
-  gulp.watch('')
+  gulp.watch(patch.watching.css, css)
 }
