@@ -1,0 +1,42 @@
+.header__top
+  border-bottom: 1px solid #e0e0e0
+  font-size: 14px
+
+@media (max-width: 768px)
+  .header__top-address
+    display: none
+
+@media (max-width: 992px)
+  .header__top-mail, .header__link-group
+    display: none
+
+.header__top-menu
+  display: flex
+  margin: 0
+  padding: 0
+  outline: 0
+  list-style: none
+
+@media (max-width: 768px)
+  .header__top-menu
+    justify-content: space-between
+    flex-grow: 1
+
+@media (max-width: 576px)
+  .header__top-menu
+    display: none
+
+.header__top-menu-item
+  padding-left: 10px
+  padding-right: 10px
+
+  &:first-child
+    padding-left: 0
+
+  &:last-child
+    padding-right: 0
+
+@media (max-width: 992px)
+  .header__top-menu-item
+    padding-left: 8px
+    padding-right: 8px

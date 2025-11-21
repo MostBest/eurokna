@@ -15,13 +15,17 @@ var paths = {
 }
 
 function css() {
-  return gulp.src(paths.styles.src)
+  return gulp.src(paths.styles.sass)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(paths.styles.dest));
 }
 
-exports.css = css;
 
 exports.watch = function () {
   gulp.watch(patch.watching.css, css)
 }
+
+var build = gulp.series(css);
+
+exports.css = css;
+exports.default = build;

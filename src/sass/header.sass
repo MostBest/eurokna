@@ -1,0 +1,118 @@
+.header
+  position: relative
+  background: #fff
+
+@import header/top
+
+.btn__group
+  display: flex
+  align-items: center
+  justify-content: ends
+
+.header__body
+  padding-top: 30px
+  padding-bottom: 30px
+
+@media (max-width: 768px)
+  .header__body
+    padding-top: 15px
+    padding-bottom: 15px
+
+.header__phone
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+.header__social
+  margin-right: 30px
+
+@media (max-width: 960px)
+  .header__phone
+    display: none
+
+.header__phone-number
+  font-size: 24px
+  font-weight: 700
+  padding: 0
+  margin: 0
+  color: #000
+  text-decoration: none
+
+@media (max-width: 576px)
+  .header__call-ager
+    display: none
+
+.header__wrap-burger
+  padding-left: 30px
+  display: none
+
+@media (max-width: 992px)
+  .header__wrap-burger
+    display: block
+
+@media (max-width: 768px)
+  .header__wrap-burger
+    padding-left: 15px
+
+@media (max-width: 576px)
+  .header__wrap-burger
+    padding-left: 0
+
+.header__mob-menu-link
+  display: flex
+  padding: 15px
+  color: #fff
+
+.no-touch .header__mob-menu-link
+  &:focus, &:hover
+    background: #3c3c3c
+
+.header__menu
+  background: #222
+  z-index: 1030
+
+@media (max-width: 992px)
+  .header__menu_mob
+    display: none
+    position: absolute
+    left: 0
+    right: 0
+
+.header-menu
+  display: flex
+  flex-grow: 1
+  justify-content: space-between
+
+@media (max-width: 992px)
+  .header-menu
+    flex-direction: column
+
+.header-menu__link
+  height: 56px
+  font-size: 16px
+  display: flex
+  align-items: center
+  padding-left: 30px
+  padding-right: 30px
+  text-decoration: none
+  color: #222
+  transition: 0.25s
+
+.no-touch .header-menu__link:hover
+  color: #f80
+
+.header-menu__main-link
+  color: #fff
+  padding-left: 15px
+  padding-right: 15px
+
+.header-menu__item
+  position: relative
+
+.header-menu__group-item
+  z-index: 1020
+  display: none
+  position: absolute
+  white-space: nowrap
+  background: #fff
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15)
